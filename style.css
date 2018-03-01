@@ -1,0 +1,380 @@
+/*
+Plugin Name: Septic Wp
+Plugin URI: http://github
+Description: тема для сайта http://otkachkadom.ru/
+Version: 1.0
+Author: Дмитрий Смоляков
+License: A "Slug" license name e.g. GPL2
+*/
+.card {
+    background-color: #fdfdfe;
+    border: 1px solid rgba(165, 165, 165, 0.28);
+    border-radius: 3px;
+    margin: 10px 10px; }
+@media (max-width: 768px) {
+    .card {
+        margin: 0; } }
+
+.card-header {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin: 25px 20px;
+    text-decoration-line: underline; }
+
+.card-body {
+    font-size: 1rem;
+    margin: 20px 30px; }
+.card-body li {
+    margin: 10px auto; }
+.card-body__schedule {
+    margin: 0 20px 20px 20px; }
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block; }
+
+body {
+    line-height: 1; }
+
+ol, ul {
+    list-style: none; }
+
+blockquote, q {
+    quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none; }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+
+.card {
+    background-color: #fdfdfe;
+    border: 1px solid rgba(165, 165, 165, 0.28);
+    border-radius: 3px;
+    margin: 10px 10px; }
+@media (max-width: 768px) {
+    .card {
+        margin: 0; } }
+
+.card-header {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin: 25px 20px;
+    text-decoration-line: underline; }
+
+.card-body {
+    font-size: 1rem;
+    margin: 20px 30px; }
+.card-body li {
+    margin: 10px auto; }
+.card-body__schedule {
+    margin: 0 20px 20px 20px; }
+
+html, body {
+    height: 100%; }
+
+.row {
+    display: flex;
+    flex-direction: row; }
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column; } }
+
+.column {
+    display: flex;
+    flex-direction: column; }
+
+.column-width-50 {
+    width: 100%; }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+    background: #F5F7FA; }
+.container-menu {
+    flex: 0 1 auto;
+    width: 100%;
+    background-color: #f5f7fa; }
+.container-body {
+    flex: 1 0 auto;
+    background-color: #ffffff;
+    width: 100%; }
+.container-footer {
+    flex: none;
+    height: 100px;
+    background-image: linear-gradient(45deg, #00A8C5 0%, #FFFF7E 100%); }
+.container .some-text {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: rgba(108, 117, 125, 0.03);
+    font-family: Roboto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px; }
+@media screen and (max-width: 992px) {
+    .container .some-text {
+        width: auto; } }
+.container .container-menu {
+    height: auto;
+    background-image: linear-gradient(45deg, #00A8C5 0%, #FFFF7E 100%); }
+.container .container-menu .wrap-icons {
+    height: auto;
+    max-width: 992px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 auto; }
+.container .container-menu .wrap-icons .icon {
+    display: flex;
+    min-width: 300px;
+    height: 75px;
+    margin: auto 0; }
+.container .container-menu .wrap-icons .icon__text {
+    width: 100%;
+    margin: auto;
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    font-size: 36px;
+    text-align: center;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: #000000; }
+.container .container-menu .wrap-icons .icon__text__red {
+    color: #EB5757; }
+.container .container-menu .wrap-icons .phone {
+    display: flex;
+    min-width: 200px;
+    min-height: 75px; }
+.container .container-menu .wrap-icons .phone__text {
+    width: 100%;
+    margin: auto;
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    font-size: 18px;
+    text-align: center;
+    text-decoration-line: underline;
+    text-transform: capitalize;
+    color: #000000; }
+.container .container-menu .wrap-icons .phone :hover {
+    color: #0b2e13;
+    text-decoration: none; }
+@media (max-width: 768px) {
+    .container .container-menu .wrap-icons .phone {
+        min-height: 45px; } }
+.container .container-menu .wrap-icons .email {
+    display: flex;
+    min-width: 200px;
+    min-height: 75px; }
+.container .container-menu .wrap-icons .email__text {
+    width: 100%;
+    margin: auto;
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    font-size: 18px;
+    text-align: center;
+    text-decoration-line: underline;
+    text-transform: capitalize;
+    color: #000000;
+    text-transform: unset; }
+@media (max-width: 992px) {
+    .container .container-menu .wrap-icons .email {
+        display: none; } }
+.container .container-menu .wrap-icons .email :hover {
+    color: #0b2e13;
+    text-decoration: none; }
+.container .work-resume {
+    width: 100%; }
+@media (max-width: 992px) {
+    .container .work-resume {
+        max-width: 100%;
+        margin-right: auto;
+        margin-left: auto; } }
+.container .work-schedule {
+    max-width: 100%; }
+@media (max-width: 992px) {
+    .container .work-schedule {
+        margin-top: 10px;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 100%; } }
+.container .work-price {
+    max-width: 100%; }
+@media (max-width: 992px) {
+    .container .work-price {
+        margin-top: 10px;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 100%; } }
+.container .govnovoz {
+    width: auto;
+    object-fit: contain;
+    margin-left: 20px;
+    margin-top: -10px; }
+@media (max-width: 576px) {
+    .container .govnovoz {
+        margin-top: 10px;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 100%; } }
+.container .order-button {
+    border-radius: 28px;
+    padding: 8px 16px;
+    background-image: linear-gradient(45deg, #00A8C5 0%, #FFFF7E 100%);
+    border: 0 none;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 14pt;
+    color: #0b2e13; }
+.container .work-order .buttn-wrapper {
+    text-align: center;
+    margin-bottom: 20px; }
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: black;
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    /* Modal Content */ }
+.modal .back-call-form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 250px; }
+.modal__content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    top: 25%;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s; }
+.modal__content input {
+    margin: 10px auto;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #437ad2;
+    height: 40px; }
+.modal .close {
+    margin-top: 10px;
+    border-radius: 28px;
+    padding: 8px 16px;
+    background-image: linear-gradient(45deg, #00A8C5 0%, #FFFF7E 100%);
+    border: 0 none;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 14pt;
+    color: #0b2e13; }
+.modal .submit {
+    margin-top: 10px;
+    border-radius: 28px;
+    padding: 8px 16px;
+    background-image: linear-gradient(45deg, #00A8C5 0%, #FFFF7E 100%);
+    border: 0 none;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 14pt;
+    color: #0b2e13; }
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block; }
+
+body {
+    line-height: 1; }
+
+ol, ul {
+    list-style: none; }
+
+blockquote, q {
+    quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none; }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+
